@@ -1,0 +1,111 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --yellow: #e9c744;
+    --black:#000000;
+    --white:#fefefe;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+}
+h1, h2,h3,h4,h5,h6,p,span,button{
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    height: 15vh;
+    background-color: var(--white);
+}
+
+main{
+    background-color: var(--yellow);
+    min-height:85vh;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 10rem;
+}
+
+main > .text-container{
+    width:50%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ .text-container > h1{
+    font-size:xxx-large;
+ }
+ .text-container > h6{
+    font-size:small;
+    line-height: 1.3rem;;
+ }
+img{
+    min-width:400px;
+    max-width:40vw;
+   transform: translateY(-10vh);
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+img:hover{
+    transform: translateY(-10vh) scale(1.1);
+  
+}
+.underline{
+    text-decoration: underline;
+}
+
+button{
+    background-color: var(--black);
+    color:var(--white);
+    border: none;
+    padding: 5px 10px;
+    text-transform:uppercase;
+    font-size: x-small;
+    letter-spacing: 1.2em;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    border: 1px solid var(--black);
+}
+button:hover{
+    background-color: var(--yellow);
+    color: var(--black);
+    border:1px solid var(--black);
+}
+@media  screen and (min-width:800px) and (max-width:1200px) {
+    main{
+        padding: 0 5rem;
+    }
+    
+}
+@media screen and (min-width: 450px) and (max-width:800px){
+    main{
+        padding: 0 1rem;
+    }
+
+img{
+    width:100%;
+}
+.text.container{
+    width:100%;
+    margin-top: 0;
+
+}
+}
+@media screen and (min-width: 450px) {
+    main{
+        padding: 0 1rem;
+    }
+
+img{
+    width:100%;
+}
+.text.container{
+    width:100%;
+    margin-top: 0;
+
+}
+}
+
+
